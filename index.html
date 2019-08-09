@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuestra Boda</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="diamonds.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="diamont-grid">
+		<div class="item"><img src="img/01.jpg" alt=""></div>
+		<div class="item"><img src="img/12.jpg" alt=""></div>
+		<div class="item"><img src="img/13.jpg" alt=""></div>
+		<div class="item"><img src="img/04.jpg" alt=""></div>
+		<div class="item"><img src="img/15.jpg" alt=""></div>
+		<div class="item"><img src="img/16.jpg" alt=""></div>
+		<div class="item"><img src="img/07.jpg" alt=""></div>
+		<div class="item"><img src="img/18.jpg" alt=""></div>
+		<div class="item"><img src="img/09.jpg" alt=""></div>
+		<div class="item"><img src="img/10.jpg" alt=""></div>
+		<div class="item"><img src="img/17.jpg" alt=""></div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="jquery.diamonds.js"></script>
+<script type="text/javascript">
+$(".diamont-grid").diamonds({
+    size : 200, // Size of diamonds in pixels. Both width and height. 
+    gap : 5, // Pixels between each square.
+    hideIncompleteRow : false, // Hide last row if there are not enough items to fill it completely.
+    autoRedraw : true, // Auto redraw diamonds when it detects resizing.
+    itemSelector : ".item" // the css selector to use to select diamonds-items.
+});
+</script>
+
+</html>
